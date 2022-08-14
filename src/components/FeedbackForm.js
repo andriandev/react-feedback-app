@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Card from './shared/Card';
 import Button from './shared/Button';
 import RatingSelect from './RatingSelect';
-import { v4 as uuidv4 } from 'uuid';
 
 function FeedbackForm(props) {
   const [text, setText] = useState('');
@@ -29,7 +28,6 @@ function FeedbackForm(props) {
     e.preventDefault();
     if (text.trim().length > 5) {
       const newFeedback = {
-        id: uuidv4(),
         text, // text: text
         rating, // rating: rating
       };

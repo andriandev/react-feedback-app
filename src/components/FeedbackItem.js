@@ -9,7 +9,7 @@ function FeedbackItem(props) {
         className="close"
         onClick={() => props.handleDelete(props.item.id)}
       >
-        x
+        <i className="fa-regular fa-trash-can"></i>
       </button>
       <div className="text-display">{props.item.text}</div>
     </Card>
