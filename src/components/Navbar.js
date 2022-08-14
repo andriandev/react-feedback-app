@@ -14,6 +14,13 @@ function Navbar() {
       >
         About
       </NavLink>
+      {' | '}
+      <NavLink
+        to="/stack"
+        className={({ isActive }) => (isActive ? 'active' : '')}
+      >
+        Stack
+      </NavLink>
     </Card>
   );
 }

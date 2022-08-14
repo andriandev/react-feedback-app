@@ -1,11 +1,12 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { FeedbackProvider } from './context/FeedbackContext';
 import Header from './components/Header';
+import Navbar from './components/Navbar';
 import FeedbackList from './components/FeedbackList';
 import FeedbackStats from './components/FeedbackStats';
 import FeedbackForm from './components/FeedbackForm';
 import AboutPage from './pages/AboutPage';
-import Navbar from './components/Navbar';
-import { FeedbackProvider } from './context/FeedbackContext';
+import StackPage from './pages/StackPage';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
               }
             />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/stack" element={<StackPage />} />
           </Routes>
         </div>
       </Router>
